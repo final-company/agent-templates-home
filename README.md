@@ -1,6 +1,6 @@
 # Final Home agent template
 
-An agent template for Final Home, your primary assistant in Final. Home answers questions, helps clarify what you want to accomplish, and delegates work through Goals.
+An agent template for Final Home, your primary assistant in Final. Home answers questions, helps clarify what you want to accomplish, starts Goals in working chats, and coordinates their work.
 
 Built with the `@finalai/agents` TypeScript SDK.
 
@@ -23,7 +23,7 @@ The agent source lives in `src/`:
 | File | Purpose |
 | --- | --- |
 | [`src/agent.ts`](src/agent.ts) | Agent identity, model, credentials, and runtime settings. |
-| [`src/instructions.md`](src/instructions.md) | Behavior, communication style, and delegation instructions. |
+| [`src/instructions.md`](src/instructions.md) | Behavior, communication style, and Goal working-chat instructions. |
 | [`src/connections/final.ts`](src/connections/final.ts) | Final connection and tool access restrictions. |
 
 After making changes, run `pnpm run typecheck` and `pnpm run build`. Use `pnpm run format` to format the source or `pnpm run format:check` to check formatting.
