@@ -5,10 +5,9 @@ import { defineFinalConnection } from '@finalai/agents';
 
 export default defineFinalConnection({
   tools: {
-    // Home delegates through Goals instead of creating or posting to arbitrary chats.
+    // Goal work reads original context and uses Goal assignments rather than arbitrary chat creation.
     deny: [
       'list_conversations',
-      'read_conversation',
       'post_to_conversation',
       'create_agent_session',
       'read_agent_session',
