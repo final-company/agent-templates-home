@@ -6,7 +6,8 @@ import { serverlessFinal } from '@finalai/agents/harnesses';
 
 export default defineAgent({
   name: 'Final',
-  description: "The person's primary assistant. Answers directly and delegates stateful work.",
+  description:
+    "The person's primary assistant. Starts Goal chats and works with the person in them.",
   harness: serverlessFinal({
     credentials: credentials.chain({
       payer: 'organization',
