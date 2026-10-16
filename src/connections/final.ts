@@ -10,6 +10,7 @@ const LOADED = [
   'get_goal',
   'draft_goal',
   'edit_goal',
+  'update_goal_plan',
   'report_goal_activity',
   'cancel_goal',
   'list_agents',
