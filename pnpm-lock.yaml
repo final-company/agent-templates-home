@@ -381,7 +381,7 @@ packages:
     engines: {node: '>=26'}
 
   '@finalai/final-agent-provider@0.1.5':
-    resolution: {integrity: sha512-PRuIcqTqIN9RRSmy9N+ReC8uc5xraIxRqJjDkdzi1SFw4ktOxXXcbo5lhV4tHy/pTeC2RbZmQlsGwbyHBM4D1g==}
+    resolution: {integrity: sha512-rGTFf1SXM7ebaIZRDuiYyK6CoGK+Vp5ajNrXFsEQJxfI68q5hqHjq5fqkq86vgiRmwOttA1RsAja7kL3BRw+aw==}
     engines: {node: '>=26'}
 
   '@finalai/websocket-gateway-protocol@0.1.4':
