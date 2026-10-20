@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       '@finalai/agents':
-        specifier: 0.1.4
-        version: 0.1.4
+        specifier: 0.1.5
+        version: 0.1.5
     devDependencies:
       '@types/node':
         specifier: ^26
@@ -367,8 +367,12 @@ packages:
     resolution: {integrity: sha512-cja2MrOizSz52agc2qabli/ET0FijlrdCrFh4E//mH1qskZ2ZbtlCm4pzaf9F0uL+sNMJLfFOeIKH6qcY7L1Mw==}
     engines: {node: '>=26'}
 
-  '@finalai/agents@0.1.4':
-    resolution: {integrity: sha512-QD6RS1T6a2tI2AMGw18kuklVtYyjZ3LQKjhQx0pm8T7nwz5sfHgc764sw5nk9s4KD6mFKUR0Xp/BRE7ko1U8tA==}
+  '@finalai/agent-provider@0.1.5':
+    resolution: {integrity: sha512-Qzbwp5x244ui85yHCSe+yhMoqfDwySB2f8KevRlkwNy0Zu0Swd4zhVQKUOHnU4KD/IVjU0NO2tVAPxL7id5Vzg==}
+    engines: {node: '>=26'}
+
+  '@finalai/agents@0.1.5':
+    resolution: {integrity: sha512-VEJ5EEo4IvLow+UOw7QCMtTYFS3E/GFpAB7FIVF7Esb3kK3mRPUxJpzxNNaksd9/HXNdMdGq0wX8UFkf/PGDgA==}
     engines: {node: '>=26'}
     hasBin: true
 
@@ -376,8 +380,8 @@ packages:
     resolution: {integrity: sha512-9p8w8uSzxn+xP3YAuBfCOdnRBrCuNCSZDVTP/IZJ8EnkenN2XAkMfm1lIaGX1YUovemEjWvA2sFmBpi5nyaj9Q==}
     engines: {node: '>=26'}
 
-  '@finalai/final-agent-provider@0.1.4':
-    resolution: {integrity: sha512-DYYxiUMwXO+C5qFqJPpjOtHF5gHSsvnYvG6t+B3foc5BWZvvGCnVzMFxlXfJN0KaPElPSM3k4u25SrH+7/ZM8w==}
+  '@finalai/final-agent-provider@0.1.5':
+    resolution: {integrity: sha512-PRuIcqTqIN9RRSmy9N+ReC8uc5xraIxRqJjDkdzi1SFw4ktOxXXcbo5lhV4tHy/pTeC2RbZmQlsGwbyHBM4D1g==}
     engines: {node: '>=26'}
 
   '@finalai/websocket-gateway-protocol@0.1.4':
@@ -822,13 +826,26 @@ snapshots:
     transitivePeerDependencies:
       - fast-check
 
-  '@finalai/agents@0.1.4':
+  '@finalai/agent-provider@0.1.5':
+    dependencies:
+      '@agentclientprotocol/sdk': 1.8.0(zod@4.6.5)
+      '@finalai/acp-session': 0.1.4
+      '@finalai/agent-protocol': 0.1.4
+      '@modelcontextprotocol/client': 2.3.1
+      '@modelcontextprotocol/core': 2.3.1
+      '@modelcontextprotocol/server': 2.3.1
+      re2js: 2.8.6
+      zod: 4.6.5
+    transitivePeerDependencies:
+      - fast-check
+
+  '@finalai/agents@0.1.5':
     dependencies:
       '@agentclientprotocol/sdk': 1.8.0(zod@4.6.5)
       '@finalai/agent-definition': 0.1.4
       '@finalai/agent-protocol': 0.1.4
-      '@finalai/agent-provider': 0.1.4
-      '@finalai/final-agent-provider': 0.1.4
+      '@finalai/agent-provider': 0.1.5
+      '@finalai/final-agent-provider': 0.1.5
       '@finalai/websockets': 0.1.4
       ws: 8.22.0
       zod: 4.6.5
@@ -842,13 +859,13 @@ snapshots:
     dependencies:
       zod: 4.6.5
 
-  '@finalai/final-agent-provider@0.1.4':
+  '@finalai/final-agent-provider@0.1.5':
     dependencies:
       '@agentclientprotocol/sdk': 1.8.0(zod@4.6.5)
       '@finalai/acp-session': 0.1.4
       '@finalai/agent-definition': 0.1.4
       '@finalai/agent-protocol': 0.1.4
-      '@finalai/agent-provider': 0.1.4
+      '@finalai/agent-provider': 0.1.5
       '@finalai/computers': 0.1.4
       '@finalai/websockets': 0.1.4
       ws: 8.22.0
