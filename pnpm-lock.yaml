@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       '@finalai/agents':
-        specifier: 0.1.5
-        version: 0.1.5
+        specifier: 0.2.0
+        version: 0.2.0
     devDependencies:
       '@types/node':
         specifier: ^26
@@ -371,8 +371,8 @@ packages:
     resolution: {integrity: sha512-Qzbwp5x244ui85yHCSe+yhMoqfDwySB2f8KevRlkwNy0Zu0Swd4zhVQKUOHnU4KD/IVjU0NO2tVAPxL7id5Vzg==}
     engines: {node: '>=26'}
 
-  '@finalai/agents@0.1.5':
-    resolution: {integrity: sha512-VEJ5EEo4IvLow+UOw7QCMtTYFS3E/GFpAB7FIVF7Esb3kK3mRPUxJpzxNNaksd9/HXNdMdGq0wX8UFkf/PGDgA==}
+  '@finalai/agents@0.2.0':
+    resolution: {integrity: sha512-UvHd5deaBxDk1lAkYl6ux/utxcwsxo3jdusRtguRmuUVXzqC/Qx8PVrZKgLysyoS4HID9B6KbK+TGwtnWsmTxg==}
     engines: {node: '>=26'}
     hasBin: true
 
@@ -380,8 +380,8 @@ packages:
     resolution: {integrity: sha512-9p8w8uSzxn+xP3YAuBfCOdnRBrCuNCSZDVTP/IZJ8EnkenN2XAkMfm1lIaGX1YUovemEjWvA2sFmBpi5nyaj9Q==}
     engines: {node: '>=26'}
 
-  '@finalai/final-agent-provider@0.1.5':
-    resolution: {integrity: sha512-rGTFf1SXM7ebaIZRDuiYyK6CoGK+Vp5ajNrXFsEQJxfI68q5hqHjq5fqkq86vgiRmwOttA1RsAja7kL3BRw+aw==}
+  '@finalai/final-agent-provider@0.2.0':
+    resolution: {integrity: sha512-TsvJ93572yz4VOeAsOIXU/zKtnVC1NfTu1Dp12bH3tFf0UzZ07+Z7m2XMxp7XunSZn5ftE1A5WCfhKEZFp8ZRA==}
     engines: {node: '>=26'}
 
   '@finalai/websocket-gateway-protocol@0.1.4':
@@ -839,13 +839,13 @@ snapshots:
     transitivePeerDependencies:
       - fast-check
 
-  '@finalai/agents@0.1.5':
+  '@finalai/agents@0.2.0':
     dependencies:
       '@agentclientprotocol/sdk': 1.8.0(zod@4.6.5)
       '@finalai/agent-definition': 0.1.4
       '@finalai/agent-protocol': 0.1.4
       '@finalai/agent-provider': 0.1.5
-      '@finalai/final-agent-provider': 0.1.5
+      '@finalai/final-agent-provider': 0.2.0
       '@finalai/websockets': 0.1.4
       ws: 8.22.0
       zod: 4.6.5
@@ -859,7 +859,7 @@ snapshots:
     dependencies:
       zod: 4.6.5
 
-  '@finalai/final-agent-provider@0.1.5':
+  '@finalai/final-agent-provider@0.2.0':
     dependencies:
       '@agentclientprotocol/sdk': 1.8.0(zod@4.6.5)
       '@finalai/acp-session': 0.1.4
