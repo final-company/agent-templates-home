@@ -23,8 +23,10 @@ The agent source lives in `src/`:
 | File | Purpose |
 | --- | --- |
 | [`src/agent.ts`](src/agent.ts) | Agent identity, model, credentials, and runtime settings. |
-| [`src/instructions.md`](src/instructions.md) | Behavior, communication style, and Goal working-chat instructions. |
+| [`src/instructions.md`](src/instructions.md) | Role, communication style, and collaboration preferences. |
 | [`src/connections/final.ts`](src/connections/final.ts) | Final connection and tool access restrictions. |
+
+Final tool workflows and API migration guidance are owned by the platform and delivered at runtime, including to existing pinned revisions and customized forks. Keep source instructions focused on role and preferences; consult the current tool guide and advertised schemas for operations. Receiving updated platform guidance does not change a fork's source, permissions, or pinned revision.
 
 After making changes, run `pnpm run typecheck` and `pnpm run build`. Use `pnpm run format` to format the source or `pnpm run format:check` to check formatting.
 
