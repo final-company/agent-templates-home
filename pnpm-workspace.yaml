@@ -3,11 +3,11 @@ allowBuilds:
 
 minimumReleaseAgeExclude:
   - '@finalai/acp-session@0.1.4'
-  - '@finalai/agent-definition@0.1.4'
+  - '@finalai/agent-definition@0.1.5'
   - '@finalai/agent-protocol@0.1.4'
-  - '@finalai/agent-provider@0.1.5'
-  - '@finalai/agents@0.2.0'
+  - '@finalai/agent-provider@0.1.6'
+  - '@finalai/agents@0.2.1'
   - '@finalai/computers@0.1.4'
-  - '@finalai/final-agent-provider@0.2.0'
+  - '@finalai/final-agent-provider@0.2.1'
   - '@finalai/websocket-gateway-protocol@0.1.4'
   - '@finalai/websockets@0.1.4'
