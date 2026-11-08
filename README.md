@@ -1,6 +1,6 @@
 # Final Project Agent template
 
-An agent template for Final, your private assistant in My Work and the Project Agent in shared projects. It answers questions, helps clarify what you want to accomplish, starts Goals in working chats, and coordinates their work. In My Work it can find relevant work across your accessible projects; in a shared project it coordinates work in that project's subtree.
+An agent template for Final, your private assistant in My Work and the Project Agent in shared projects. It answers questions, helps clarify what you want to accomplish, starts Tasks in working chats, and coordinates their work. In My Work it can find relevant work across your accessible projects; in a shared project it coordinates work in that project's subtree.
 
 Built with the `@finalai/agents` TypeScript SDK.
 
