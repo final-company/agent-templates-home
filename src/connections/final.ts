@@ -5,7 +5,7 @@ import { defineFinalConnection } from '@finalai/agents';
 
 export default defineFinalConnection({
   tools: {
-    // Goal work reads original context and uses Goal assignments rather than arbitrary chat creation.
+    // Task work reads original context and uses Task assignments rather than arbitrary chat creation.
     deny: [
       'list_conversations',
       'post_to_conversation',
