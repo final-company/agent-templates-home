@@ -7,7 +7,7 @@ import { serverlessFinal } from '@finalai/agents/harnesses';
 export default defineAgent({
   name: 'Final',
   description:
-    "The person's primary assistant. Starts Task chats and works with the person in them.",
+    "The person's primary assistant. Starts Tasks in working chats and helps coordinate their work.",
   avatar: {
     url: 'https://final.ai/assets/agent-avatars/final-snake-v3/poster.png',
     states: {
