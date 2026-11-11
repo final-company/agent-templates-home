@@ -11,10 +11,20 @@ Requires Node.js 26.10 or newer and pnpm 12.14.0. From the repository root:
 ```sh
 pnpm install
 pnpm run typecheck
-pnpm run build
+pnpm run print
 ```
 
-The build writes generated files to `src/.final/compile/`, which is excluded from version control. Local compilation does not require an API key. Set `FINAL_API_KEY` to also check compatibility with the installed Final harness.
+`pnpm run print` loads `src/agent.ts` and writes the agent's document as JSON. It makes no network calls and needs no API key. Nothing is compiled or built: the document is the agent.
+
+## What the agent requires
+
+The agent states what it needs; whoever starts it provides the implementations.
+
+| Requirement | Meaning |
+| --- | --- |
+| Harness | Any harness that allows `auto` permissions. It recommends the Final harness with `deepseek-v4.1-flash-1017` at high reasoning, but the caller chooses. |
+| Compute | None. The agent has no files, shell, or code of its own. |
+| `final` integration | Final's tools for the project: Tasks, chats, agents, and search. A few tools are denied so Task work goes through Task assignments rather than arbitrary chat creation. |
 
 ## Customizing the agent
 
@@ -22,13 +32,12 @@ The agent source lives in `src/`:
 
 | File | Purpose |
 | --- | --- |
-| [`src/agent.ts`](src/agent.ts) | Agent identity, model, credentials, and runtime settings. |
+| [`src/agent.ts`](src/agent.ts) | Agent identity, requirements, and tool restrictions. |
 | [`src/instructions.md`](src/instructions.md) | Role, communication style, and collaboration preferences. |
-| [`src/connections/final.ts`](src/connections/final.ts) | Final connection and tool access restrictions. |
 
-Final tool workflows and API migration guidance are owned by the platform and delivered at runtime, including to existing pinned revisions and customized forks. Keep source instructions focused on role and preferences; consult the current tool guide and advertised schemas for operations. Receiving updated platform guidance does not change a fork's source, permissions, or pinned revision.
+Final tool workflows and API guidance are supplied by Final at runtime, including to customized forks. Keep source instructions focused on role and preferences; consult the current tool guide and advertised schemas for operations. Receiving updated guidance does not change a fork's source or permissions.
 
-After making changes, run `pnpm run typecheck` and `pnpm run build`. Use `pnpm run format` to format the source or `pnpm run format:check` to check formatting.
+After making changes, run `pnpm run typecheck` and `pnpm run print`. Use `pnpm run format` to format the source or `pnpm run format:check` to check formatting.
 
 ## License
 
