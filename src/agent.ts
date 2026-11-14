@@ -8,21 +8,7 @@ export const agent = defineAgent({
   name: 'Final',
   description:
     "The person's primary assistant. Starts Tasks in working chats and helps coordinate their work.",
-  avatar: {
-    url: 'https://final.ai/assets/agent-avatars/final-snake-v3/poster.png',
-    states: {
-      idle: {
-        type: 'video',
-        url: 'https://final.ai/assets/agent-avatars/final-snake-v3/idle.mp4',
-        posterUrl: 'https://final.ai/assets/agent-avatars/final-snake-v3/poster.png',
-      },
-      working: {
-        type: 'video',
-        url: 'https://final.ai/assets/agent-avatars/final-snake-v3/working.mp4',
-        posterUrl: 'https://final.ai/assets/agent-avatars/final-snake-v3/poster.png',
-      },
-    },
-  },
+  avatar: { url: 'https://images.final.ai/images/aa7c9625-a6d3-4cb6-94bc-cd24b14f99ba.png' },
   instructions: markdown('./instructions.md', { from: import.meta.url }),
   require: {
     harness: {
